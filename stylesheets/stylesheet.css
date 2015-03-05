@@ -575,8 +575,8 @@ nav {
   filter:alpha(opacity=100);  /* IE 5-7 */
 }
 .download-bar a.admin {
-  background: transparent url(../images/uparrow.png) no-repeat 0 2px;
-  padding-left: 35px;
+  background: transparent url(../images/uparrow_white.png) no-repeat 0 2px;
+  padding-left: 30px;
   margin-top: 8px;
   display: block;
   float: left;
@@ -671,7 +671,7 @@ a.code {
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
 }
 a.admin {
-  background: transparent url(../images/uparrow.png) no-repeat ;
+  background: transparent url(../images/uparrow_white.png) no-repeat ;
   width: 30px;
   height: 21px;
   display: block;
