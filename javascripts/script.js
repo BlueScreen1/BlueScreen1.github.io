@@ -1,12 +1,13 @@
-(function($) {
-$(document).ready(function(){
+(function ($) {
+    
+    $(document).ready(function() {
 
   // putting lines by the pre blocks
-  $("pre").each(function(){
-    var pre = $(this).text().split("\n");
-    var lines = new Array(pre.length+1);
-    for(var i = 0; i < pre.length; i++) {
-      var wrap = Math.floor(pre[i].split("").length / 70)
+        $("pre").each(function () {
+            var pre = $(this).text().split("\n");
+            var lines = new Array(pre.length + 1);
+            for (var i = 0; i < pre.length; i++) {
+            var wrap = Math.floor(pre[i].split("").length / 70)
       if (pre[i]==""&&i==pre.length-1) {
         lines.splice(i, 1);
       } else {
