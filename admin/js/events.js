@@ -3,7 +3,8 @@ $(function() {
    $("#add_event_button").click(function(){
      var topic = $("#title").val();
      var location = $("#location").val();
-     var date = $("#datepicker").val();
+     var date_s = $("#datepicker").val();
+     var date = new Date(date_s);
      var time = $("#time").val();
      var descritpion = $("#description").val();
      var Meeting = Parse.Object.extend("Meetings");
@@ -15,10 +16,11 @@ $(function() {
      meeting.set("time" , time);
      meeting.save(null, {
         success: function(meeting) {
-            alert('New object created with objectId: ' + meeting.id);
+            alert('Meeting saved');
+            window.location.replace('index.html');
         },
         error: function(meeting, error) {
-            alert('Failed to create new object, with error code: ' + error.message);
+            alert('Unable to save object: ' + error.message);
         }
      });
     });

@@ -1,5 +1,7 @@
 $(function(){
-    $('#datepicker').datepicker();
+    $('#datepicker').datepicker({
+        dateFormat: "yy-mm-dd"
+    });
     $('#time').timepicker({
        hourGrid: 4,
 	   minuteGrid: 10,

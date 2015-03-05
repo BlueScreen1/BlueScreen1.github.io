@@ -9,10 +9,11 @@ $(function() {
         message.set("conent" , content);
         message.save(null, {
         success: function(message) {
-            alert('New object created with objectId: ' + message.id);
+            alert('Message Created' );
+            window.location.replace('index.html');
         },
         error: function(message, error) {
-            alert('Failed to create new object, with error code: ' + error.message);
+            alert('Message Creation failed: ' + error.message);
         }
      });
     });
