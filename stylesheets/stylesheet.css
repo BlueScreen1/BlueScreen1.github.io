@@ -18,6 +18,7 @@ html {
 
 body {
   margin: 0;
+	background-color:#AFEEEE;
 }
 
 
@@ -430,30 +431,42 @@ th {
 /* Style */
 
 body {
-  font-size: 15px;
+  font-size: 16px;
   font-family: Arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background: #D1D1D1;
+  background: #EBF4FA;
 }
 
 a {
-  color: #63a52a;
+  color: #659EC7;
   text-decoration: none;
   transition: opacity ease-in-out 0.3s;
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #90D355;
+a:hover{
+	text-decoration:underline;
+	color: #BCC6CC;
+	
+}
+#links:hover {
+  border-top: 2px solid #493D26;
+  color: #493D26;
 }
 
-h1.title {
-  margin: 30px 20px 10px;
+#divider {
+	border-bottom:1px solid #98AFC7;
+	width: 300px;
+	margin: 75px 0px 0px 160px;
+	max-width:100%;
+}
+#title {
+  margin: 20px 20px 10px;
   font-size: 60px;
   font-weight: bold;
   font-style: italic;
   font-family: Georgia, serif;
+  font-color: #659EC7;
   text-align: center;
 }
 
@@ -464,7 +477,7 @@ h1.title {
 
 #container {
   border: 1px solid #2a2a2a;
-  background: #ddd url(../images/pattern.png);
+  background: url(../images/pattern2.jpg);
   box-shadow: 0 0 5px #b1b1b1;
 }
 
@@ -477,7 +490,7 @@ p.tagline {
 #main {
   margin-top: 20px;
   padding: 0 20px 90px;
-  background-color: #fff;
+  background: url(../images/pattern2.jpg);
 }
 
 
@@ -489,18 +502,39 @@ nav {
     width: 120px;
     float:left;
     padding: 10px 50px 10px 50px;
-	border-left: 1px solid black;
 }
 
+#heading{
+	overflow:auto;
+	font-family: Georgia,serif;
+	font-size:40px;
+	border-bottom:1px solid #98ADC7;
+	position:relative;
+	width:250px;
+}
+
+#subheading{
+	font-family:Georgia,serif;
+	font-size:30px;
+	border-bottom:1px solid #98ADC7;
+	width:250px;
+}
+
+.profiles{
+	font-family:Georgia, serif;
+	font-size:20px;
+}
 .download-bar {
   background: #222;
   border: 5px solid #444;
   padding: 10px;
   margin: 50px -35px 20px;
+ 
 
 }
 .download-bar .inner {
   overflow:hidden;
+	
 }
 
 .download-bar .watch-fork iframe {
@@ -538,6 +572,7 @@ nav {
 }
 
 .download-bar .trc {
+	
   border: 10px solid black;
   border-color:  black transparent transparent;
   width: 0;
