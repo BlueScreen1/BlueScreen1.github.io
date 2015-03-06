@@ -438,7 +438,7 @@ body {
 }
 
 a {
-  color: #659EC7;
+	color: #56A5EC;
   text-decoration: none;
   transition: opacity ease-in-out 0.3s;
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
@@ -457,7 +457,7 @@ a:hover{
 #divider {
 	border-bottom:1px solid #98AFC7;
 	width: 300px;
-	margin: 75px 0px 0px 160px;
+	margin: 75px 0px 0px 170px;
 	max-width:100%;
 }
 #title {
@@ -466,7 +466,7 @@ a:hover{
   font-weight: bold;
   font-style: italic;
   font-family: Georgia, serif;
-  font-color: #659EC7;
+  color: #3090C7;
   text-align: center;
 }
 
@@ -499,9 +499,11 @@ nav {
     text-align: center;
 }
 #links {
-    width: 120px;
+    width: 124px;
+	font-family:Georgia,serif;
     float:left;
-    padding: 10px 50px 10px 50px;
+	position:static;
+    padding: 15px 50px 10px 50px;
 }
 
 #heading{
@@ -509,8 +511,10 @@ nav {
 	font-family: Georgia,serif;
 	font-size:40px;
 	border-bottom:1px solid #98ADC7;
-	position:relative;
+	position:static;
 	width:250px;
+	color: #625D5D;
+	font-weight: normal;
 }
 
 #subheading{
@@ -518,6 +522,7 @@ nav {
 	font-size:30px;
 	border-bottom:1px solid #98ADC7;
 	width:250px;
+	color: #625D5D;
 }
 
 .profiles{
@@ -525,14 +530,17 @@ nav {
 	font-size:20px;
 }
 .download-bar {
+	position:static;
   background: #222;
   border: 5px solid #444;
   padding: 10px;
   margin: 50px -35px 20px;
+	color: #BCC6CC;
  
 
 }
 .download-bar .inner {
+  
   overflow:hidden;
 	
 }
@@ -818,16 +826,16 @@ footer .owner p a {
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .markdown-body h1 {
-  font-size: 28px;
+	font-size:40px;
+	
 }
 
 .markdown-body h2 {
   font-size: 24px;
-  color: #557398;
 }
 
 .markdown-body h3 {
