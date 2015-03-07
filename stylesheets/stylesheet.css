@@ -434,7 +434,7 @@ body {
   font-size: 16px;
   font-family: Arial, Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background: #EBF4FA;
+  background: url(../images/background.jpg);
 }
 
 a {
@@ -461,9 +461,7 @@ a:hover{
 	max-width:100%;
 }
 #title {
-  margin: 20px 20px 10px;
   font-size: 60px;
-  font-weight: bold;
   font-style: italic;
   font-family: Georgia, serif;
   color: #3090C7;
@@ -471,7 +469,7 @@ a:hover{
 }
 
 .wrapper {
-  width: 675px;
+  width: 674px;
   margin: 0 auto;
 }
 
@@ -529,6 +527,7 @@ nav {
 	font-family:Georgia, serif;
 	font-size:20px;
 }
+
 .download-bar {
 	position:static;
   background: #222;
