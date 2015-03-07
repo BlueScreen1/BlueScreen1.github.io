@@ -6,7 +6,7 @@ $(function() {
         var Message = Parse.Object.extend("Messages");
         var message = new Message();
         message.set("title" ,title);
-        message.set("conent" , content);
+        message.set("content" , content);
         message.save(null, {
         success: function(message) {
             alert('Message Created' );
