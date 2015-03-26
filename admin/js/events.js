@@ -5,6 +5,7 @@ $(function() {
      var location = $("#location").val();
      var date_s = $("#datepicker").val();
      var date = new Date(date_s);
+     date.setHours(5);
      var time = $("#time").val();
      var descritpion = $("#description").val();
      var Meeting = Parse.Object.extend("Meetings");
