@@ -1,10 +1,7 @@
 $(function(){
-    $('#datepicker').datepicker({
-        dateFormat: "yy-mm-dd"
+    $('#date').datetimepicker({
+        dateFormat: 'yy-mm-dd',
+        timeFormat: 'hh:mm:ss'
     });
-    $('#time').timepicker({
-       hourGrid: 4,
-	   minuteGrid: 10,
-	   timeFormat: "hh:mm tt"
-    });
+
 });
