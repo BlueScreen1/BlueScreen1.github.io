@@ -15,8 +15,27 @@ $(function() {
      meeting.set("description" , descritpion);
      meeting.save(null, {
         success: function(meeting) {
+            $("#title").val('');
+            $("#location").val('');
+            $("#date").val('');
+            $("#description").val('');;
+            var query = new Parse.Query(Parse.Installation);
+            query.equalTo('channels' , '');
+            Parse.Push.send({
+                where: query,
+                data: {
+                    alert: "Don't miss " + topic
+                }
+            }, {
+                success: function() {
+                    console.log("Push was successful");
+                },
+                error: function(error) {
+                    console.error(error);
+                }
+            });
             alert('Meeting saved');
-            window.location.replace('index.html');
+           
         },
         error: function(meeting, error) {
             alert('Unable to save object: ' + error.message);
