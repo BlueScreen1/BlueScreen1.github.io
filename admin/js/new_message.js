@@ -11,7 +11,10 @@ $(function() {
                 var object = results[i];
                 var id = object.id;
                 var name = object.get("name");
-                var appendString = '<option>' + name + '</option>';
+                if(name == "General")
+                    var appendString = '<option selected ="selected">' + name + '</option>';
+                else
+                    var appendString = '<option>' + name + '</option>';
                 $("#groups").append(appendString);
 
             }
@@ -32,6 +35,22 @@ $(function() {
         message.save(null, {
         success: function(message) {
             alert('Message Created' );
+            var query = new Parse.Query(Parse.Installation);
+            query.equalTo('channels' , '');
+            Parse.Push.send({
+                where: query,
+                data: {
+                    alert:  content
+
+                }
+            }, {
+                success: function() {
+                    console.log("Push was successful");
+                },
+                error: function(error) {
+                    console.error(error);
+                }
+            });
             window.location.replace('index.html');
         },
         error: function(message, error) {

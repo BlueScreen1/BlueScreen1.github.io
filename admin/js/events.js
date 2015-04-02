@@ -35,6 +35,7 @@ $(function() {
                 }
             });
             alert('Meeting saved');
+            window.location.replace('index.html');
            
         },
         error: function(meeting, error) {
