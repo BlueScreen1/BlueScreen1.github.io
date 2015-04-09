@@ -491,7 +491,6 @@ p.tagline {
   background: url(../images/pattern2.jpg);
 }
 
-
 nav {
     font-size: 20px;
     text-align: center;
@@ -880,7 +879,7 @@ footer .owner p a {
 }
 
 .markdown-body ul {
-  list-style-type: disc;
+  list-style-image: url(../images/bullet.gif);
 }
 
 .markdown-body ol {
