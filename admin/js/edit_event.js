@@ -47,6 +47,22 @@ $(function(){
                     }
                 });
                 alert("Event updated, message will be sent out.");
+                var query = new Parse.Query(Parse.Installation);
+                query.equalTo('channels' , '');
+                Parse.Push.send({
+                    where: query,
+                    data: {
+                        alert: new_topic + " has been updated, check the details so you don't miss out!"
+                    }
+                }, {
+                    success: function() {
+                        console.log("Push was successful");
+                    },
+                    error: function(error) {
+                        console.error(error);
+                    }
+                });
+                alert('Meeting saved');
                 window.location.replace("view_events.html");
             },
             error: function(object , error){
